@@ -11,8 +11,9 @@ const  {elements: {email, password},}  = event.currentTarget;
     return;
   }
 
-  
-  console.log( `email: ${email.value}`);
-  console.log( `pass: ${password.value}`);
+  const userInfo = {email:email.value, password:password.value}
+  console.log(userInfo);
+  // console.log( `email: ${email.value}`);
+  // console.log( `pass: ${password.value}`);
   form.reset();
 });
